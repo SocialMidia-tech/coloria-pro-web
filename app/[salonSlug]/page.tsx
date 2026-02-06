@@ -28,7 +28,7 @@ export default function SalonPage({ params }: { params: { salonSlug: string } })
 
       {!image ? (
         <div style={{ border: '2px dashed #D1C7BD', padding: '40px', borderRadius: '20px', backgroundColor: 'white' }}>
-          <input type="file" accept="image/*" onChange={aoSubirFoto} id="upload" style={{ display: 'none' }} />
+          <input type="file" accept="image/*" capture="user" onChange={aoSubirFoto} id="upload" style={{ display: 'none' }} />
           <label htmlFor="upload" style={{ cursor: 'pointer', backgroundColor: '#C9A14A', color: 'white', padding: '15px 30px', borderRadius: '10px', fontWeight: 'bold' }}>
             CLIQUE PARA TIRAR FOTO
           </label>
